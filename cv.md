@@ -4,7 +4,7 @@
 
 > Hello, my name is Darya, and I'm here to become a true professional in front-end development. I know, that without any programming background it's very difficult to study here, but I'll do my best)
 Also, I'm here for the second time. Work, family and many other things intervented me, but now I'm with you until the end.
->
+
 * HTML, CSS, Basic JS
 
 * All my programming experience is limited to this The Rolling Scopes course.
