@@ -13,7 +13,7 @@
 
 <body>
     <div class="cv">
-        <section class="cv__photo">
+        <div class="cv__photo">
             <section class="title__info">
                 <h1>Goncharova Darya</h1>
                 <h2>Zhodino, Belarus</h2>
@@ -35,9 +35,9 @@
                 </nav>
             </section>
             <img src="/images/myavatar.jpg" alt="avatar" />
-        </section>
+        </div>
         <main>
-            <section class="description">
+            <div class="description">
                 <p>Hello, my name is Darya, and I'm here to become a true professional in front-end development. I
                     know,
                     that
@@ -48,32 +48,43 @@
                     with you
                     until the end.
                 </p>
-            </section>
-            <section class="skills">
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Basic JS</li>
-                    <li>GIT</li>
-                    <li>Photoshop</li>
-                </ul>
+            </div>
+            <div class="container">
+                <section class="skills">
+                    <h3>My skills:</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Basic JS</li>
+                        <li>GIT</li>
+                        <li>Photoshop</li>
+                    </ul>
+                </section>
 
                 <section class="experience">
-                    <p>All my programming experience is limited to this The Rolling Scopes course.</p>
-                    <p> I graduated Belarusian State Economic University in marketing. Now I'm working as a
-                        procurement specialist in an online shop. But frontend always interested me.
-                    </p>
-                    <p>
-                        I have a B1 English level, according to internet tests. I studied it at school and one year
-                        in university.
-                        It's easy for me to write or read, but I have a lack of experience in speaking. It's
-                        fixable)
-                        Now I'm studying English by myself with a Market Leader course.
-                    </p>
+                    <h3>Education:</h3>
+                    <ul>
+                        <li><b>2017</b> - graduated Belarusian State Economic University in marketing.</li>
+                        <li><b>2021</b> - now I'm working as a procurement specialist in an online-shop Socket.by.</li>
+                    </ul>
                 </section>
+            </div>
+
+            <p>All my programming experience is limited to this The Rolling Scopes course.</p>
+            <section class="english">
+                <h3>English</h3>
+                <p>
+                    I have a B1 English level, according to internet tests. I studied it at school and one
+                    year
+                    at university.
+                    It's easy for me to write or read, but I have a lack of experience in speaking. It's
+                    fixable)
+                    Now I'm studying English by myself with a Market Leader course.
+                </p>
+            </section>
         </main>
         <footer class="footer">
-            <a href="https://github.com/darya-goncharova" target="_blank">Darya</a>
+
             <a href="https://rs.school/js/" target="_blank">
                 <img src="/images/rs_school_js.svg" alt="github" />
             </a>
