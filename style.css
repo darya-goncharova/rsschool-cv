@@ -57,10 +57,23 @@ background: center no-repeat;
 
 
 }
-
-
-
+.links ul {
+    margin: 20px;
+    padding: 4px;
+    height: 50px;
+    margin-top: 100px;
 }
+.links li{
+display: inline;
+padding: 3px;
+}
+
+.links img {
+    height: 90%;
+    width: auto;
+}
+
+
 .footer {
     box-sizing: border-box;
     border-top: 1px solid black;
