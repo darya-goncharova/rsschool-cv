@@ -12,6 +12,32 @@
 </head>
 
 <body>
+
+
+    <div class="header">
+        <div class="header___container">
+            <a href="" class="header_logo">
+                <div class="menu_icon">
+                    <span><img src="images/iconmonstr-menu-1.svg" alt="burger" />
+                    </span>
+                </div>
+            </a>
+            <div class="header_menu menu">
+                <nav class="menu_body">
+                    <ul class="menu_list">
+                        <li><a href="#skills" class="menu_link">My skills</a></li>
+                        <li><a href="#education" class="menu_link">Education</a></li>
+                        <li><a href="#code_example" class="menu_link">Code example</a></li>
+                        <li><a href="#english" class="menu_link">English</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <div class="cv">
         <div class="cv__photo">
             <section class="title__info">
@@ -50,7 +76,7 @@
                 </p>
             </div>
             <div class="container">
-                <section class="skills">
+                <section class="skills" id="skills">
                     <h3>My skills:</h3>
                     <ul>
                         <li>HTML</li>
@@ -61,7 +87,7 @@
                     </ul>
                 </section>
 
-                <section class="experience">
+                <section class="experience" id="experience">
                     <h3>Education:</h3>
                     <ul>
                         <li><b>2017</b> - graduated Belarusian State Economic University in marketing.</li>
@@ -72,14 +98,14 @@
 
 
             <h3>Code example:</h3>
-            <div class="code_example">
+            <div class="code_example" id="code_example">
                 <code>var OrderPeople = function(people){ <br>
                 return people.sort((a,b) => a.age - b.age );<br>
             }</code>
             </div>
 
             <p>All my programming experience is limited by this The Rolling Scopes course.</p>
-            <section class="english">
+            <section class="english" id="english">
                 <h3>English</h3>
                 <p>
                     I have a B1 English level, according to internet tests. I studied it at school and one
