@@ -3,39 +3,36 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title>Goncharova Darya</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="icon" href="./images/favicon-32x32.png">
 </head>
 
 <body>
 
 
-    <div class="header">
-        <div class="header___container">
-            <a href="" class="header_logo">
-                <div class="menu_icon">
-                    <span><img src="images/iconmonstr-menu-1.svg" alt="burger" />
-                    </span>
+    <header class="header">
+        <div class="header__container">
+            <div class="hamburger__menu">
+                    <span></span>
                 </div>
-            </a>
-            <div class="header_menu menu">
-                <nav class="menu_body">
-                    <ul class="menu_list">
-                        <li><a href="#skills" class="menu_link">My skills</a></li>
-                        <li><a href="#education" class="menu_link">Education</a></li>
-                        <li><a href="#code_example" class="menu_link">Code example</a></li>
-                        <li><a href="#english" class="menu_link">English</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li><a href="#skills" class="menu__link">My skills</a></li>
+                    <li><a href="#experience" class="menu__link">Education</a></li>
+                    <li><a href="#code_example" class="menu__link">Code example</a></li>
+                    <li><a href="#english" class="menu__link">English</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
-
-
+    </header>
 
 
     <div class="cv">
@@ -47,7 +44,7 @@
                 <nav class="links">
                     <ul>
                         <li class="link__github">
-                            <a href="https://github.com/darya-goncharova" target="_blank"><img src="images/github.png"
+                            <a href="https://github.com/darya-goncharova" target="_blank"><img src="images/icons8-github.svg"
                                     alt="github" /></a>
                         </li>
                         <li class="link__vk">
@@ -57,10 +54,13 @@
                         <li class="link__gmail">
                             <a href="mailto:darya.goncharova23@gmail.com"><img src="images/mail.png" alt="email"></a>
                         </li>
+                        <li class="link__dischord">
+                            <a href="https://discord.com/channels/@Darya Goncharova#6714"><img src="./images/Discord-Logo-White.svg" alt="dischord"></a>
+                        </li>
                     </ul>
                 </nav>
             </section>
-            <img src="images/myavatar.jpg" alt="avatar" />
+            <img class="avatar" src="images/myavatar.jpg" alt="avatar" />
         </div>
         <main>
             <div class="description">
@@ -99,9 +99,10 @@
 
             <h3>Code example:</h3>
             <div class="code_example" id="code_example">
-                <code>var OrderPeople = function(people){ <br>
-                return people.sort((a,b) => a.age - b.age );<br>
+                <pre><code>var OrderPeople = function(people){ 
+                return people.sort((a,b) => a.age - b.age );
             }</code>
+            </pre>
             </div>
 
             <p>All my programming experience is limited by this The Rolling Scopes course.</p>
@@ -125,6 +126,7 @@
             <p><a href="https://github.com/darya-goncharova">My Github page</a></p>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
