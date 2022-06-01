@@ -17,24 +17,6 @@
 
 <body>
 
-
-    <header class="header">
-        <div class="header__container">
-            <div class="hamburger__menu">
-                    <span></span>
-                </div>
-            <nav class="header__menu">
-                <ul class="header__list">
-                    <li><a href="#skills" class="menu__link">My skills</a></li>
-                    <li><a href="#experience" class="menu__link">Education</a></li>
-                    <li><a href="#code_example" class="menu__link">Code example</a></li>
-                    <li><a href="#english" class="menu__link">English</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-
     <div class="cv">
         <div class="cv__photo">
             <section class="title__info">
@@ -62,7 +44,28 @@
             </section>
             <img class="avatar" src="images/myavatar.jpg" alt="avatar" />
         </div>
-        <main>
+
+
+        <main class="portfolio_container">
+            <header class="header">
+                <div class="header__container">
+                    <div class="hamburger__menu">
+                            <span></span>
+                        </div>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li><a href="#skills" class="menu__link">My skills</a></li>
+                            <li><a href="#courses" class="menu__link">Courses</a></li>
+                            <li><a href="#experience" class="menu__link">Education</a></li>
+                            <li><a href="#projects" class="menu__link">Projects</a></li>
+                            <li><a href="#code_example" class="menu__link">Code example</a></li>
+                            <li><a href="#english" class="menu__link">English</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="portfolio_text">
             <div class="description">
                 <p>Hello, my name is Darya, and I'm here to become a true professional in front-end development. I
                     know,
@@ -75,7 +78,8 @@
                     until the end.
                 </p>
             </div>
-            <div class="container">
+            <div class="container_skills">
+                <div class="column1">
                 <section class="skills" id="skills">
                     <h3>My skills:</h3>
                     <ul>
@@ -95,8 +99,39 @@
                     </ul>
                 </section>
             </div>
+            <section class="courses" id="courses">
+                <h3>Courses:</h3>
+                <ul>
+                    <li><b>2021</b> - JS/FE Pre-School 2022 (<a href="https://app.rs.school/certificate/p54sojgt" target="_blank">Certificate</a>)</li>
+                    <li><b>2022</b> - JavaScript/Front-end 2022Q1 (I didn't finish this course, so here am I)</li>
+                </ul>
+            </section>
+        </div>
+
+        <section class="projects" id="projects">
+            <h3>Projects:</h3>
+
+        <div class="projects_links">   
+            <div class="link_wrapper">
+                <a href="https://darya-goncharova.github.io/shelter-my/pages/main/index.html" target="_blank"><img src="./images/shelter-portfolio.jpg" alt="shelter"/>Shelter (This project isn't ideal, I know)</a>
+            </div>
+            <div class="link_wrapper">
+                <a href="https://darya-goncharova.github.io/cssMemSlider/" target="_blank"><img src="./images/memslider-portfolio.jpg" alt="memslider"/>Memslider</a>
+            </div>
+            <div class="link_wrapper">
+                <a href="https://darya-goncharova.github.io/myEcoSounds/" target="_blank"><img src="./images/ecosounds-portfolio.jpg" alt="ecosounds" />Eco Sounds</a>
+            </div>
+            <div class="link_wrapper">
+                <a href="https://darya-goncharova.github.io/myMemory-game/" target="_blank"><img src="./images/memorygame-portfolio.jpg" alt="memorygame"/>My super cringe Memory Game</a>
+            </div>
+            <div class="link_wrapper">
+                <a href="https://darya-goncharova.github.io/myPortfolio3/" target="_blank"><img src="./images/portfolio-portfolio.jpg" alt="portfolio"/> Portfolio from past RS Stage0</a>
+            </div>
+        </div>
+        </section>
 
 
+            <section class="coding">
             <h3>Code example:</h3>
             <div class="code_example" id="code_example">
                 <pre><code>var OrderPeople = function(people){ 
@@ -104,8 +139,15 @@
             }</code>
             </pre>
             </div>
+            </section>
+
 
             <p>All my programming experience is limited by this The Rolling Scopes course.</p>
+
+
+
+
+
             <section class="english" id="english">
                 <h3>English</h3>
                 <p>
@@ -117,16 +159,20 @@
                     Now I'm studying English by myself with a Market Leader course.
                 </p>
             </section>
+        </div>
         </main>
         <footer class="footer">
             <a href="https://rs.school/js/" target="_blank">
                 <img src="images/rs_school_js.svg" alt="github">
             </a>
-            2021
+            2022
             <p><a href="https://github.com/darya-goncharova">My Github page</a></p>
         </footer>
     </div>
+
     <script src="script.js"></script>
 </body>
 
 </html>
+
+
