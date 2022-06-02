@@ -186,7 +186,7 @@ bottom: 0px;
 div p {
     padding: 20px;
 }
-    .cv__photo {
+.cv__photo {
         flex-direction: column;
     }
 .avatar {
@@ -352,7 +352,7 @@ padding: 0px;
 
 .footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     margin-top: 80px;
     }
