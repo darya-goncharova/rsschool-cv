@@ -18,7 +18,6 @@ html {
   
 body {
     font-size: 16px;
-    line-height: 23px;
     font-weight: 400;
     font-family: 'Poppins', Helvetica, sans-serif;
     color: black;
@@ -69,8 +68,8 @@ background-color: white;
     flex-direction: column;
     font-style: normal;
     padding: 0%;
-    width: 860px;
-    gap: 30px;
+    width: 250px;
+    gap: 20px;
     justify-content: space-around;
     position: relative;
     z-index: 2;
@@ -167,6 +166,9 @@ bottom: 0px;
 
 /*CV*/
 
+
+
+
 .cv {
     max-width: 1100px;
     margin: 0 auto;
@@ -194,22 +196,24 @@ div p {
 
 
 .title__info {
-    float:left;
 	width: 60%;
     padding-top: 40px;
 }
 
 .avatar {
-width: 40%;
+width: 35%;
 height: 40%;
 
 }
 
 .title__info h1 {
-    font-size: 50px;
-    font-weight: 400;
+    font-size: 60px;
+    font-weight: 700;
     text-align: center;
-    margin-bottom: 30px;
+    background-image: linear-gradient(to left, #343a40, #f8f9fa);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 .title__info h2 {
     font-size: 25px;
@@ -277,7 +281,13 @@ h3 {
 
 .link_wrapper:hover {
     box-shadow: 2px 2px 5px #8d8989;
+    overflow:visible;
+    opacity:1;
+    cursor:pointer;
+    margin-bottom:12px;
+    padding-bottom:12px;
 }
+
 .link_wrapper {
     display: flex;
     align-items: center;
@@ -286,17 +296,22 @@ h3 {
     height: 250px;
     width: 250px;
     transition: box-shadow ease-in-out 0.2s;
+    overflow:hidden;
+    opacity:.6;
+    transition-property:opacity, margin-bottom, padding-bottom;
+    transition-duration:.3s,.25s, .3s;
 }
 
+section {
+    padding: 30px;
+}
+
+section:active {
+    background-color: #f3f1f0 !important;
+  }
 
 
 /* coding */
-
-.coding {
-    padding-top: 40px;
-}
-
-
 
 
 
@@ -310,19 +325,9 @@ h3 {
 .container_skills {
     display: flex;
     box-sizing: border-box;
-    margin-top: 30px;
-    margin-bottom: 40px;
 }
 
 
-.skills {
-    padding-left: 30px;
-}
-
-
-.experience {
-    padding-top: 30px;
-}
 
 .experience li {
     list-style-type: none;
@@ -336,12 +341,8 @@ padding: 0px;
 
 }
 
-.english h3 {
-padding-top: 40px;
-}
-.english p {
-    margin-top: 0px;
-    }
+
+
 
 
 
@@ -350,7 +351,8 @@ padding-top: 40px;
 
 
 .footer {
-    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
     width: 100%;
     margin-top: 80px;
     }
@@ -364,6 +366,4 @@ padding-top: 40px;
 .footer img {
     width: 80px;
 }
-.footer p {
-    float: right;
-    }
+
