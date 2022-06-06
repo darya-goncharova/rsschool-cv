@@ -1,3 +1,5 @@
+// BURGER
+
 function burgerMenu(selector) {
 
 let header__burger = document.querySelector('.header__burger');
@@ -16,3 +18,4 @@ header__list.onclick = function () {
     back.classList.toggle('lock');
 }
 }
+
